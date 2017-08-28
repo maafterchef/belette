@@ -1,0 +1,9 @@
+AuthName "Page protected"
+AuthType Basic
+AuthUserFile "/opt/lampp/htdocs/admin/.htpasswd"
+Require valid-user
+DirectoryIndex index.php
+
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^/galerie/$1   /galerie/$1.php[L]
